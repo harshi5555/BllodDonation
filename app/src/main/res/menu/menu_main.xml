@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:icon="@drawable/account"
+        app:showAsAction="always"
+        android:title="account"
+        android:id="@+id/myicon"
+        />
+    <item
+
+        app:showAsAction="never"
+        android:title="Information"
+        android:id="@+id/information"
+
+        />
+
+<item
+    android:icon="@drawable/blood4"
+    app:showAsAction="always"
+    android:title="shear"
+    android:id="@+id/shear"
+    />
+</menu>
