@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">BloodDonation</string>
     <string name="text">Every two seconds someone in the world needs blood.</string>
+    <string name="username">User name / Email Address</string>
+    <string name="Password"> Password</string>
+    <string name="remember">Remember me</string>
 </resources>
 
