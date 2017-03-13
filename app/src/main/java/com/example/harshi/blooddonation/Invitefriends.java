@@ -15,7 +15,7 @@ private Toolbar toolbar;
         setContentView(R.layout.activity_main);
 
 
-        toolbar =(Toolbar)findViewById(R.id.app_bar);
+        toolbar =(Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Invite friends");

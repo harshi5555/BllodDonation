@@ -4,5 +4,7 @@
     <string name="username">User name / Email Address</string>
     <string name="Password"> Password</string>
     <string name="remember">Remember me</string>
+    <string name="action_information">Information</string>
+    <string name="Account_icon">account</string>
 </resources>
 
