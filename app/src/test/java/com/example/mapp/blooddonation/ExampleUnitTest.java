@@ -1,4 +1,4 @@
-package com.example.harshi.blooddonation;
+package com.example.mapp.blooddonation;
 
 import org.junit.Test;
 

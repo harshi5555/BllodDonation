@@ -7,8 +7,7 @@
     <string name="action_information">Information</string>
     <string name="Account_icon">account</string>
 
-    
-
+    <string name="pick_place">Choose a place</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="blooddonation_login">BloodDonation Login</string>
     <string name="don_t_have_an_account_singup">Don\'t have an account? Singup</string>
@@ -17,7 +16,7 @@
     <string name="Age">Age</string>
     <string name="Gender">Gender</string>
     <string name="BloodGroup">Blood Group</string>
-    <string name="address">address</string>
+    <string name="searchCity">City</string>
     <string name="phonenumber">Phone Number</string>
     <string name="email">Email</string>
     <string name="password">password</string>
@@ -43,5 +42,21 @@
         <item>Male</item>
         <item>Female</item>
     </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="city">City</string>
+    <string name="street_name_number"><![CDATA[Street name & Number]]></string>
+    <string name="place">Place</string>
+    <string name="Place">Place</string>
+    <string name="Date">Date</string>
+    <string name="step_1">Step 1</string>
+    <string name="process1">Our staff and volunteers will sign you in and go over basic eligibility and donation information. You will read information about donating blood, and will be asked to show a donor card, driver\'s license, or other form(s) of ID.</string>
+    <string name="step2">Step 2</string>
+    <string name="donation">Donation Process:</string>
+    <string name="step3">You will answer some questions during a private and confidential interview about your health history and places you have traveled. We will check your temperature, pulse, blood pressure and hemoglobin level present in a sample of blood.</string>
+    <string name="step_3">Step 3</string>
+    <string name="step4">The actual donation takes about 8-10 minutes, during which you will be seated comfortably. The process is safe and sterile.The staff and volunteers will be available if you have any questions. Certain donation types, such as platelets, red cells or plasma, can take up to two hours.</string>
+    <string name="every_two_seconds_someone_in_the_world_needs_blood">Every two seconds someone in the world needs blood.</string>
+    <string name="login">Login</string>
+    <string name="user_login">User Login</string>
 </resources>
 

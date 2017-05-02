@@ -1,18 +1,14 @@
-package com.example.harshi.blooddonation;
+package com.example.mapp.blooddonation;
 
-import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,17 +28,24 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(com.example.mapp.blooddonation.R.layout.activity_login);
         initialize();
+
+        /*firebaseAuth = FirebaseAuth.getInstance();
+        if(firebaseAuth.getCurrentUser()!= null){
+            //profile activity here
+            finish();
+            startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+        }*/
     }
 
 
 
     private void initialize(){
-        buttonSignin = (Button)findViewById(R.id.login);
-        editTextEmail =(EditText)findViewById(R.id.email);
-        editTextPassword =(EditText)findViewById(R.id.password);
-        textViewSignup = (TextView)findViewById(R.id.singup);
+        buttonSignin = (Button)findViewById(com.example.mapp.blooddonation.R.id.login);
+        editTextEmail =(EditText)findViewById(com.example.mapp.blooddonation.R.id.email);
+        editTextPassword =(EditText)findViewById(com.example.mapp.blooddonation.R.id.password);
+        textViewSignup = (TextView)findViewById(com.example.mapp.blooddonation.R.id.singup);
 
         progressDialog = new ProgressDialog(this);
         firebaseAuth = FirebaseAuth.getInstance();
@@ -61,8 +64,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             Toast.makeText(this,"Please enter password",Toast.LENGTH_LONG).show();
             return;
         }
-        progressDialog.setMessage("Registering User...");
-        progressDialog.show();
+      //  progressDialog.setMessage("Registering User...");
+        //progressDialog.show();
      /*
         firebaseAuth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -84,13 +87,15 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(Login.this,"Login Successfully",Toast.LENGTH_LONG).show();
+                    finish();
+                    startActivity(new Intent(getApplicationContext(),HomeActivity.class));
                 }else {
                     Toast.makeText(Login.this,"Could not Login. Please check your credentials",Toast.LENGTH_LONG).show();
                 }
                 progressDialog.hide();
             }
         });
-        firebaseAuth.signOut();
+       // firebaseAuth.signOut();
     }
 
     @Override
