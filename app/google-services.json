@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "635737132493",
+    "firebase_url": "https://crypto-oath-146811.firebaseio.com",
+    "project_id": "crypto-oath-146811",
+    "storage_bucket": "crypto-oath-146811.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635737132493:android:756ced62f1ac376d",
+        "android_client_info": {
+          "package_name": "com.example.mapp.blooddonation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635737132493-jim8p6b5rbk2fdngn6sgac5dbt4mm7ib.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "635737132493-uno923drk738cbu4fiu4ktsrbn8a84k3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJM70GgrOMtBpSiH3a_HF60v2zsn0UhC8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
