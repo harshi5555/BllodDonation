@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mapp.blooddonation">
+    package="com.example.mapp.giveaway">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -14,7 +14,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -28,11 +29,11 @@
         android:supportsRtl="true"
         android:theme="@style/MaterialTheme">
         <activity
-            android:name=".HomeActivity"
+            android:name=".Login"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity android:name=".Information" />
-        <activity android:name=".Login">
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,7 +42,7 @@
         </activity>
         <activity android:name=".SignUp" />
         <activity android:name=".SearchDonors" />
-        <activity android:name=".DonorsList" />
+        <activity android:name=".DonorsPage" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -54,11 +55,15 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".FindDonationPlace" />
-        <activity android:name=".Statistics"
+        <activity
+            android:name=".Statistics"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity android:name=".EmailHandling" />
-        <activity android:name=".CurrentUserInfo"></activity>
+        <activity android:name=".CurrentUserInfo" />
+        <activity android:name=".StatusActiviy" />
+        <activity android:name=".ImageDonation" />
+        <activity android:name=".SmsActivity"></activity>
     </application>
 
 </manifest>
